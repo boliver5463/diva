@@ -1,0 +1,70 @@
+social :
+  - name : Facebook
+    url : https://www.facebook.com/
+  - name : Twitter
+    url : https://twitter.com/
+  - name : LinkedIn
+    url : https://www.linkedin.com/
+  - name : YouTube
+    url : https://youtube.com/
+
+snippets :
+  - name : HTML Skeleton
+    url : ''
+
+tools :
+  - name : Google Docs
+    url : https://docs.google.com/document/u/0/
+  - name : Google Sheets
+    url : https://docs.google.com/spreadsheets/u/0/
+  - name : Google Slides
+    url : https://docs.google.com/presentation/u/0/
+  - name : Google Forms
+    url : https://docs.google.com/forms/u/0/
+  - name : Google Analytics
+    url : https://analytics.google.com
+  - name : Google Tag Manager
+    url : https://tagmanager.google.com
+  - name : Google Pagespeed
+    url : https://developers.google.com/speed/pagespeed/insights/
+  - name : Ultimate CSS Gradient Generator
+    url : http://www.colorzilla.com/gradient-editor/
+  - name : Colormind
+    url : http://colormind.io/
+  - name : Why No Padlock
+    url : https://www.whynopadlock.com/
+  - name : Facebook Debugger
+    url : https://developers.facebook.com/tools/debug/
+  - name : Twitter Card Validator
+    url : https://cards-dev.twitter.com/validator
+  - name : LinkedIn Post Inspector
+    url : https://www.linkedin.com/post-inspector/inspect/
+  
+apis :
+  - name : Bootstrap
+    url : https://getbootstrap.com
+  - name : jQuery
+    url : https://api.jquery.com/
+
+google :
+  - name : Google Docs
+    url : https://docs.google.com/document/u/0/
+    font-awesome-class : far fa-file-alt
+  - name : Google Sheets
+    url : https://docs.google.com/spreadsheets/u/0/
+    font-awesome-class : far fa-file-excel
+  - name : Google Slides
+    url : https://docs.google.com/presentation/u/0/
+    font-awesome-class : far fa-file-powerpoint
+  - name : Google Forms
+    url : https://docs.google.com/forms/u/0/
+    font-awesome-class : fab fa-wpforms' 
+  - name : Google Analytics
+    url : https://analytics.google.com
+    font-awesome-class : fas fa-chart-bar
+  - name : Google Tag Manager
+    url : https://tagmanager.google.com
+    font-awesome-class : fas fa-tag' 
+  - name : Google Pagespeed
+    url : https://developers.google.com/speed/pagespeed/insights/
+    font-awesome-class : fas fa-tachometer-alt
