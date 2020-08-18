@@ -1,0 +1,25 @@
+languages:
+  - name: PHP
+  - name: SQL
+  - name: HTML
+  - name: JavaScript
+  - name: jQuery
+  - name: Vue.js
+
+frameworks:
+  - name: Jekyll
+  - name: WordPress
+  - name: OpenCart
+  - name: Joomla
+  - name: WIX
+
+databases:
+- name: phpMyAdmin
+- name: MySQL
+- name: MongoDB
+
+tools:
+- name: AWS
+- name: cPanel
+- name: Plesk
+- name: GitHub
