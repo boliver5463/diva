@@ -16,9 +16,6 @@ jQuery(function(){
   search.focus();
   reminder.hide();
 
-  // jQuery.each( toolbar, function( key, arr ){
-  //   createToolbarMenu( key, arr );
-  // });
 
   browserVersion( jQuery('#browser') );
   /* Get current Datetime */
