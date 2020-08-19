@@ -6,83 +6,19 @@ var other         = jQuery('#other-search');
 var g_suite       = jQuery('#google-suite');
 var currentMethod = 'GET';
 
-/* Search Engines */
-var engines = [
-  { 'name': 'Google',                   'action':'https://www.google.com/search',                                     'short': '!g',    'method': 'GET'     },
-  { 'name': 'Duck Duck Go',             'action':'https://duckduckgo.com/',                                           'short': '!d',    'method': 'GET'     },
-  { 'name': 'Reddit',                   'action':'https://www.reddit.com/search',                                     'short': '!r',    'method': 'GET'     },
-  { 'name': 'Stack Overflow',           'action':'https://stackoverflow.com/search',                                     'short': '!s',    'method': 'GET'     },
-  { 'name': 'Font Awesome',             'action':'https://fontawesome.com/icons',                                     'short': '!f',    'method': 'GET'     },
-  { 'name': 'Collins Dictionary',       'action':'https://www.collinsdictionary.com/dictionary/english/',             'short': '!c',    'method': 'STATIC'  },
-  { 'name': 'Collins Thesaurus',        'action':'https://www.collinsdictionary.com/dictionary/english-thesaurus/',   'short': '!t',    'method': 'STATIC'  },
-  { 'name': 'Unicode Character Table',  'action':'https://unicode-table.com/en/search/',                           'short': '!u',    'method': 'GET'     },
-];
-
-var toolbar = {
-  'social': [
-    { 'name': 'Facebook',     'url': 'https://www.facebook.com/' },
-    { 'name': 'Twitter',      'url': 'https://twitter.com/' },
-    { 'name': 'LinkedIn',     'url': 'https://www.linkedin.com/' },
-    { 'name': 'YouTube',      'url': 'https://youtube.com/' },
-  ],
-  'snippets': [
-    { 'name': 'HTML Skeleton',  'url': '' },
-  ],
-  'tools': [
-    { 'name': 'Google Docs',                      'url': 'https://docs.google.com/document/u/0/' },
-    { 'name': 'Google Sheets',                    'url': 'https://docs.google.com/spreadsheets/u/0/' },
-    { 'name': 'Google Slides',                    'url': 'https://docs.google.com/presentation/u/0/' },
-    { 'name': 'Google Forms',                     'url': 'https://docs.google.com/forms/u/0/' },
-    { 'name': 'Google Analytics',                 'url': 'https://analytics.google.com' },
-    { 'name': 'Google Tag Manager',               'url': 'https://tagmanager.google.com' },
-    { 'name': 'Google Pagespeed',                 'url': 'https://developers.google.com/speed/pagespeed/insights/' },
-    { 'name': 'Ultimate CSS Gradient Generator',  'url': 'http://www.colorzilla.com/gradient-editor/' },
-    { 'name': 'Colormind',                        'url': 'http://colormind.io/' },
-    { 'name': 'Why No Padlock',                   'url': 'https://www.whynopadlock.com/' },
-    { 'name': 'Facebook Debugger',                'url': 'https://developers.facebook.com/tools/debug/' },
-    { 'name': 'Twitter Card Validator',           'url': 'https://cards-dev.twitter.com/validator' },
-    { 'name': 'LinkedIn Post Inspector',          'url': 'https://www.linkedin.com/post-inspector/inspect/' },
-  ],
-  'apis': [
-    { 'name': 'Bootstrap', 'url': 'https://getbootstrap.com' },
-    { 'name': 'jQuery', 'url': 'https://api.jquery.com/' },
-  ],
-};
-
-var google_suite = {
-  'google' : [
-    { 'name': 'Google Docs',                      'url': 'https://docs.google.com/document/u/0/',                   'font-awesome-class' : 'far fa-file-alt' },
-    { 'name': 'Google Sheets',                    'url': 'https://docs.google.com/spreadsheets/u/0/',               'font-awesome-class' : 'far fa-file-excel' },
-    { 'name': 'Google Slides',                    'url': 'https://docs.google.com/presentation/u/0/',               'font-awesome-class' : 'far fa-file-powerpoint' },
-    { 'name': 'Google Forms',                     'url': 'https://docs.google.com/forms/u/0/',                      'font-awesome-class' : 'fab fa-wpforms' },
-    { 'name': 'Google Analytics',                 'url': 'https://analytics.google.com',                            'font-awesome-class' : 'fas fa-chart-bar' },
-    { 'name': 'Google Tag Manager',               'url': 'https://tagmanager.google.com',                           'font-awesome-class' : 'fas fa-tag' },
-    { 'name': 'Google Pagespeed',                 'url': 'https://developers.google.com/speed/pagespeed/insights/', 'font-awesome-class' : 'fas fa-tachometer-alt' },
-  ]
-}
-
-// function createGoogleMenu( id, arr ){
-//   g_suite;
-//   var html = "<ul>";
-//   jQuery.each( arr, function( key, item ){
-//     html += "<li><a href='" +item['url']+ "'>"+ item['name'] +"</a></li>";
-//   });
-//   html += "</ul>";
-//   if( jQuery( '#'+id ) ){
-//     jQuery( '#'+id ).after( html );
-//   }
-// }
-
 /* Starting processes*/
 jQuery(function(){
-  createOtherEngines();
+  // createOtherEngines();
+  jQuery.getJSON("http://jsonip.com?callback=?", function (data) {
+      jQuery("#ip-address").text(data.ip);
+  });
 
   search.focus();
   reminder.hide();
 
-  jQuery.each( toolbar, function( key, arr ){
-    createToolbarMenu( key, arr );
-  });
+  // jQuery.each( toolbar, function( key, arr ){
+  //   createToolbarMenu( key, arr );
+  // });
 
   browserVersion( jQuery('#browser') );
   /* Get current Datetime */
@@ -106,18 +42,6 @@ jQuery('body').on( 'submit', '#search-form', function( event ){
   }
   return false;
 });
-
-/* Create toolbar menu */
-function createToolbarMenu( id, arr ){
-  var html = "<ul>";
-  jQuery.each( arr, function( key, item ){
-    html += "<li><a href='" +item['url']+ "'>"+ item['name'] +"</a></li>";
-  });
-  html += "</ul>";
-  if( jQuery( '#'+id ) ){
-    jQuery( '#'+id ).after( html );
-  }
-}
 
 /* 
  * Track when keyup in input 
@@ -150,21 +74,21 @@ jQuery('body').on('click', '.single-engine', function(){
 });
 
 /* Add search engines to page dynamically */
-function createOtherEngines(){
-  var html = '';
-  jQuery.each( engines, function(key,engine){
-    html += '<div class="row single-engine" data-short="'+engine['short']+'"">';
-    html +=   '<div class="col-3 col-xs-3">';
-    html +=     engine['short'];
-    html +=   '</div>';
-    html +=   '<div class="col-9 col-xs-9">';
-    html +=     engine['name'];
-    html +=   '</div>';
-    html += '</div>';
-  });
+// function createOtherEngines(){
+//   var html = '';
+//   jQuery.each( engines, function(key,engine){
+//     html += '<div class="row single-engine" data-short="'+engine['short']+'"">';
+//     html +=   '<div class="col-3 col-xs-3">';
+//     html +=     engine['short'];
+//     html +=   '</div>';
+//     html +=   '<div class="col-9 col-xs-9">';
+//     html +=     engine['name'];
+//     html +=   '</div>';
+//     html += '</div>';
+//   });
 
-  other.html( html );
-}
+//   other.html( html );
+// }
 
 /* Get search input */
 function searchTerms(){
