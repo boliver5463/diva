@@ -13,26 +13,22 @@ snippets :
     url : ''
 
 tools :
-  - name : Google Docs
-    url : https://docs.google.com/document/u/0/
-  - name : Google Sheets
-    url : https://docs.google.com/spreadsheets/u/0/
-  - name : Google Slides
-    url : https://docs.google.com/presentation/u/0/
-  - name : Google Forms
-    url : https://docs.google.com/forms/u/0/
-  - name : Google Analytics
-    url : https://analytics.google.com
-  - name : Google Tag Manager
-    url : https://tagmanager.google.com
-  - name : Google Pagespeed
-    url : https://developers.google.com/speed/pagespeed/insights/
+  - name : Why No Padlock?
+    url : https://www.whynopadlock.com/
+  - name : Compressor IO
+    url : https://compressor.io/
+  - name : GeoImgr
+    url : https://www.geoimgr.com/
+  - name : Pure CSS Loaders
+    url : https://loading.io/css/
+  - name : Unsplash (Open Source Images)
+    url : https://unsplash.com/
+  - name : Picjumbo (Open Source Images)
+    url : https://picjumbo.com/search/code
   - name : Ultimate CSS Gradient Generator
     url : http://www.colorzilla.com/gradient-editor/
   - name : Colormind
     url : http://colormind.io/
-  - name : Why No Padlock
-    url : https://www.whynopadlock.com/
   - name : Facebook Debugger
     url : https://developers.facebook.com/tools/debug/
   - name : Twitter Card Validator
@@ -41,6 +37,10 @@ tools :
     url : https://www.linkedin.com/post-inspector/inspect/
   
 apis :
+  - name : Flexbox Cheatsheet
+    url : https://yoksel.github.io/flex-cheatsheet/#display
+  - name : Pure CSS Loaders
+    url : https://loading.io/css/
   - name : Bootstrap
     url : https://getbootstrap.com
   - name : jQuery
