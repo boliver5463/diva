@@ -1,0 +1,192 @@
+I"ž<div id="Content">
+  <!-- <h1>&#60;DEV HUD/&#62;</h1> -->
+  <h1 title="Dynamic Informative Virtual Assistant">D.I.V.A.</h1>
+  <form id="search-form" method="get" action="https://www.google.com/search" autocomplete="off">
+
+    <div style="height: 37px; margin-bottom: 10px;">
+      <div id="search-reminder">Google</div>
+    </div>
+    
+    <input type="text" id="search" name="q" placeholder="Google" />
+    <div id="toolbar" class="row">
+      <div class="col-3 col-xs-3">
+        
+          <i id="social" class="fas fa-share-alt"></i>
+          <ul>
+            
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+            
+              <li><a href="https://twitter.com/">Twitter</a></li>
+            
+              <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+            
+              <li><a href="https://youtube.com/">YouTube</a></li>
+            
+          </ul>
+        
+      </div>
+      <div class="col-3 col-xs-3">
+        
+          <i id="snippets" class="fas fa-code"></i>
+          <ul>
+            
+              <li><a href="">HTML Skeleton</a></li>
+            
+          </ul>
+        
+      </div>
+      <div class="col-3 col-xs-3">
+        
+          <i id="tools" class="fas fa-wrench"></i>
+          <ul>
+            
+              <li><a href="https://www.whynopadlock.com/">Why No Padlock?</a></li>
+            
+              <li><a href="https://compressor.io/">Compressor IO</a></li>
+            
+              <li><a href="https://www.geoimgr.com/">GeoImgr</a></li>
+            
+              <li><a href="https://loading.io/css/">Pure CSS Loaders</a></li>
+            
+              <li><a href="https://unsplash.com/">Unsplash (Open Source Images)</a></li>
+            
+              <li><a href="https://picjumbo.com/search/code">Picjumbo (Open Source Images)</a></li>
+            
+              <li><a href="http://www.colorzilla.com/gradient-editor/">Ultimate CSS Gradient Generator</a></li>
+            
+              <li><a href="http://colormind.io/">Colormind</a></li>
+            
+              <li><a href="https://developers.facebook.com/tools/debug/">Facebook Debugger</a></li>
+            
+              <li><a href="https://cards-dev.twitter.com/validator">Twitter Card Validator</a></li>
+            
+              <li><a href="https://www.linkedin.com/post-inspector/inspect/">LinkedIn Post Inspector</a></li>
+            
+          </ul>
+        
+      </div>
+      <div class="col-3 col-xs-3">
+        
+          <i id="apis" class="fas fa-journal-whills"></i>
+          <ul>
+            
+              <li><a href="https://yoksel.github.io/flex-cheatsheet/#display">Flexbox Cheatsheet</a></li>
+            
+              <li><a href="https://loading.io/css/">Pure CSS Loaders</a></li>
+            
+              <li><a href="https://getbootstrap.com">Bootstrap</a></li>
+            
+              <li><a href="https://api.jquery.com/">jQuery</a></li>
+            
+          </ul>
+        
+      </div>
+    </div>
+
+    <div id="other-search">
+      
+        <div class="row single-engine" data-short="!g">
+          <div class="col-3 col-xs-3">!g</div>
+          <div class="col-9 col-xs-9">Google</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!d">
+          <div class="col-3 col-xs-3">!d</div>
+          <div class="col-9 col-xs-9">Duck Duck Go</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!r">
+          <div class="col-3 col-xs-3">!r</div>
+          <div class="col-9 col-xs-9">Reddit</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!s">
+          <div class="col-3 col-xs-3">!s</div>
+          <div class="col-9 col-xs-9">Stack Overflow</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!f">
+          <div class="col-3 col-xs-3">!f</div>
+          <div class="col-9 col-xs-9">Font Awesome</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!c">
+          <div class="col-3 col-xs-3">!c</div>
+          <div class="col-9 col-xs-9">Collins Dictionary</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!t">
+          <div class="col-3 col-xs-3">!t</div>
+          <div class="col-9 col-xs-9">Collins Thesaurus</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!u">
+          <div class="col-3 col-xs-3">!u</div>
+          <div class="col-9 col-xs-9">Unicode Character Table</div>
+        </div>
+      
+    </div>
+
+  </form>
+
+  <div id="computer" class="fade-in text-right">
+        
+    <div id="browser" class="copy"></div>
+
+    <div id="ip-address" class="copy"></div>
+
+  </div>
+
+  <div id="date-time" class="fade-in text-right"></div>
+
+  <div id="copyright" class="fade-in text-left">
+
+    <div id="produced">
+      <span>Produced by </span>
+      <br />
+      <a href="https://brentonoliver.com" style="color: #efefef;">
+        <img src="images/BO_Icon_lines_white.png" width="15" height="15" alt="Brenton Oliver" />
+        <span>Brenton Oliver</span>
+      </a>
+    </div>
+
+    <div id="current-year"></div>
+
+  </div>
+
+  <div id="custom-tools" class="fade-in">
+    
+    <div id="social-share-generator" class="cursor" onclick="socialShareURL();">Social Share URL</div>
+    
+    <div id="google-suite"></div>
+
+  </div>
+
+</div>
+
+<div class="diva fade-in">
+  <div class="case-container">
+    <div class="outter-ring">
+      <div class="c1"></div>
+      <div class="c2"></div>
+      <div class="c3"></div>
+      <div class="c4"></div>
+      <div class="c5"></div>
+      <div class="core"></div>
+    </div>
+    <ul class="marks">
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+    <div class="cover"></div>
+  </div>
+</div>
+:ET

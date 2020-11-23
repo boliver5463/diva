@@ -6,6 +6,18 @@ var other         = jQuery('#other-search');
 var g_suite       = jQuery('#google-suite');
 var currentMethod = 'GET';
 
+engines = [
+  { 'name' : 'Google', 'action' : 'https://www.google.com/search', 'short' : '!g', 'method' : 'GET' },
+  { 'name' : 'Duck Duck Go', 'action' : 'https://duckduckgo.com/', 'short' : '!d', 'method' : 'GET' },
+  { 'name' : 'Reddit', 'action' : 'https://www.reddit.com/search', 'short' : '!r', 'method' : 'GET' },
+  { 'name' : 'Stack Overflow', 'action' : 'https://stackoverflow.com/search', 'short' : '!s', 'method' : 'GET' },
+  { 'name' : 'Font Awesome', 'action' : 'https://fontawesome.com/icons', 'short' : '!f', 'method' : 'GET' },
+  { 'name' : 'Collins Dictionary', 'action' : 'https://www.collinsdictionary.com/dictionary/english/', 'short' : '!c', 'method' : 'STATIC' },
+  { 'name' : 'Collins Thesaurus', 'action' : 'https://www.collinsdictionary.com/dictionary/english-thesaurus/', 'short' : '!t', 'method' : 'STATIC' },
+  { 'name' : 'Unicode Character Table', 'action' : 'https://unicode-table.com/en/search/', 'short' : '!u', 'method' : 'GET'}
+];
+
+
 /* Starting processes*/
 jQuery(function(){
   // createOtherEngines();
