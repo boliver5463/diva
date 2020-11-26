@@ -112,7 +112,6 @@ function searchTerms(){
     // reminder.fadeOut('slow');
     reminder.fadeOut('slow');
   }
-  updateParticles();
 }
 
 /* Manipulate search form to switch to different search engines based on text */
@@ -174,17 +173,6 @@ function currentTime( element ){
   jQuery( element ).html( date );
 
   jQuery('#current-year').html('© D.I.V.A. '+year);
-}
-
-/* 
- * On KeyUp on the search box, delete particles and
- * then create particles based on the character length of the query.
- */
-function updateParticles(){
-  jQuery('#particles-js').html('');
-  if( search.val() ){
-    createParticles( search.val().length );
-  }
 }
 
 /* ---- particles.js config ---- */
