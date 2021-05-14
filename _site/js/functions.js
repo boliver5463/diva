@@ -8,6 +8,8 @@ var currentMethod = 'GET';
 
 engines = [
   { 'name' : 'Google', 'action' : 'https://www.google.com/search', 'short' : '!g', 'method' : 'GET' },
+  { 'name' : 'PHP', 'action' : 'https://www.php.net/manual-lookup.php?scope=quickref&pattern=', 'short' : '!p', 'method' : 'GET' },
+  { 'name' : 'Magento', 'action' : 'https://devdocs.magento.com/guides/v2.4/search.html?query=', 'short' : '!m', 'method' : 'GET' },
   { 'name' : 'Duck Duck Go', 'action' : 'https://duckduckgo.com/', 'short' : '!d', 'method' : 'GET' },
   { 'name' : 'Reddit', 'action' : 'https://www.reddit.com/search', 'short' : '!r', 'method' : 'GET' },
   { 'name' : 'Stack Overflow', 'action' : 'https://stackoverflow.com/search', 'short' : '!s', 'method' : 'GET' },

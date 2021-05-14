@@ -1,85 +1,4 @@
-<!doctype html>
-<html lang="">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>D.I.V.A.</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-  
-  <link rel="stylesheet" href="css/style.css?v=2.5">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-
-  <script src="js/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-1.0.0.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BW783X');</script>
-  <!-- End Google Tag Manager -->
-
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BW783X"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <svg id="fader"></svg>
-<script>
-    /* Code used for page refreshing */
-    fadeInPage();
-
-    /* Fade-in Page */
-    function fadeInPage() {
-        if (!window.AnimationEvent) { return; }
-        var fader = document.getElementById('fader');
-        fader.classList.add('fade-out');
-    }
-
-    /* Fade-out Page */
-    document.addEventListener('DOMContentLoaded', function() {
-        if (!window.AnimationEvent) { return; }
-        var anchors = document.getElementsByTagName('a');
-        
-        for (var idx=0; idx<anchors.length; idx+=1) {
-            if (anchors[idx].hostname !== window.location.hostname ||
-                anchors[idx].pathname === window.location.pathname) {
-                continue;
-            }
-            anchors[idx].addEventListener('click', function(event) {
-                var fader = document.getElementById('fader'),
-                    anchor = event.currentTarget;
-                
-                var listener = function() {
-                    window.location = anchor.href;
-                    fader.removeEventListener('animationend', listener);
-                };
-                fader.addEventListener('animationend', listener);
-                
-                event.preventDefault();
-                fader.classList.add('fade-in');
-            });
-        }
-    });
-
-    /* Safari fix for fading-effect navigation */
-    window.addEventListener('pageshow', function (event) {
-        if (!event.persisted) {
-        return;
-        }
-        var fader = document.getElementById('fader');
-        fader.classList.remove('fade-in');
-    });
-</script>
-  <div id="Content">
+I"K<div id="Content">
   <!-- <h1>&#60;DEV HUD/&#62;</h1> -->
   <h1 title="Dynamic Informative Virtual Assistant">D.I.V.A.</h1>
   <form id="search-form" method="get" action="https://www.google.com/search" autocomplete="off">
@@ -174,11 +93,6 @@
         <div class="row single-engine" data-short="!p">
           <div class="col-3 col-xs-3">!p</div>
           <div class="col-9 col-xs-9">PHP</div>
-        </div>
-      
-        <div class="row single-engine" data-short="!m">
-          <div class="col-3 col-xs-3">!m</div>
-          <div class="col-9 col-xs-9">Magento</div>
         </div>
       
         <div class="row single-engine" data-short="!d">
@@ -280,15 +194,4 @@
     <div class="cover"></div>
   </div>
 </div>
-
-
-<script src="js/social-share.js"></script>
-
-<div id="particles-js"></div>
-
-<script src="js/copy.js"></script>
-
-<script src="js/functions.js?v=1.2"></script>
-
-</body>
-</html>
+:ET

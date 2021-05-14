@@ -2,6 +2,14 @@
   action : https://www.google.com/search
   short : '!g'
   method : 'GET'
+- name : PHP
+  action : https://www.php.net/manual-lookup.php?scope=quickref&pattern=
+  short : '!p'
+  method : 'GET'
+- name : Magento
+  action : https://devdocs.magento.com/guides/v2.4/search.html?query=
+  short : '!m'
+  method : 'GET'
 - name : Duck Duck Go
   action : https://duckduckgo.com/
   short : '!d'

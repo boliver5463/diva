@@ -1,4 +1,4 @@
-I"ž<div id="Content">
+I"ü<div id="Content">
   <!-- <h1>&#60;DEV HUD/&#62;</h1> -->
   <h1 title="Dynamic Informative Virtual Assistant">D.I.V.A.</h1>
   <form id="search-form" method="get" action="https://www.google.com/search" autocomplete="off">
@@ -88,6 +88,16 @@
         <div class="row single-engine" data-short="!g">
           <div class="col-3 col-xs-3">!g</div>
           <div class="col-9 col-xs-9">Google</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!p">
+          <div class="col-3 col-xs-3">!p</div>
+          <div class="col-9 col-xs-9">PHP</div>
+        </div>
+      
+        <div class="row single-engine" data-short="!m">
+          <div class="col-3 col-xs-3">!m</div>
+          <div class="col-9 col-xs-9">Magento</div>
         </div>
       
         <div class="row single-engine" data-short="!d">
